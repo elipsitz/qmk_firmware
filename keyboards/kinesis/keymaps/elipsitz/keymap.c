@@ -20,5 +20,21 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
 #endif // defined(ENCODER_ENABLE) && defined(ENCODER_MAP_ENABLE)
 
 
-
+// Key overrides for window management.
+// (left shift + left command) => (ctrl+option+command) + key
+#define WINDOW_OVERRIDE(key_in, key_out) \
+  ko_make_basic(MOD_BIT(KC_LSFT) | MOD_BIT(KC_LGUI), key_in, LCAG(key_out))
+const key_override_t window_top    = WINDOW_OVERRIDE(KC_I, KC_UP);
+const key_override_t window_bottom = WINDOW_OVERRIDE(KC_K, KC_DOWN);
+const key_override_t window_left   = WINDOW_OVERRIDE(KC_J, KC_LEFT);
+const key_override_t window_right  = WINDOW_OVERRIDE(KC_L, KC_RIGHT);
+const key_override_t window_max    = WINDOW_OVERRIDE(KC_M, KC_M);
+const key_override_t **key_overrides = (const key_override_t *[]){
+    &window_top,
+    &window_bottom,
+    &window_left,
+    &window_right,
+    &window_max,
+    NULL
+};
 
