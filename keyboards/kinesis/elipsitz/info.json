@@ -1,0 +1,18 @@
+{
+    "manufacturer": "Eli Lipsitz",
+    "keyboard_name": "kinesis_eli",
+    "maintainer": "Eli Lipsitz",
+    "bootloader": "rp2040",
+    "diode_direction": "COL2ROW",
+    "matrix_pins": {
+        "cols": ["GP18", "GP16", "GP17", "GP22", "GP27", "GP21", "GP6"],
+        "rows": ["GP10", "GP11", "GP12", "GP13", "GP14", "GP15", "GP5", "GP3", "GP4", "GP1", "GP0", "GP2", "GP19", "GP28", "GP26"]
+    },
+    "processor": "RP2040",
+    "url": "",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x0000",
+        "vid": "0xFEED"
+    }
+}
