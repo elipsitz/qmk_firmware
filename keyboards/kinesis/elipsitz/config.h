@@ -30,5 +30,6 @@
 #define RGBLIGHT_LIMIT_VAL 64
 #define RGBLIGHT_LAYERS
 #define RGBLIGHT_LAYERS_OVERRIDE_RGB_OFF
+#define RGBLIGHT_LAYER_BLINK
 // (bug? rgblight_task won't be called, so layers won't work, unless this is set)
 #define RGBLIGHT_USE_TIMER
