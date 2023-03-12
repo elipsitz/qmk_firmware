@@ -33,3 +33,8 @@
 #define RGBLIGHT_LAYER_BLINK
 // (bug? rgblight_task won't be called, so layers won't work, unless this is set)
 #define RGBLIGHT_USE_TIMER
+
+// Buzzer config
+#define AUDIO_PIN GP20
+#define AUDIO_PWM_DRIVER PWMD2
+#define AUDIO_PWM_CHANNEL RP2040_PWM_CHANNEL_A
