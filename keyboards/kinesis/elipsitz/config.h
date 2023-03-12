@@ -23,3 +23,12 @@
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET
 // Timeout window in ms in which the double tap can occur.
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_TIMEOUT 200U
+
+// RGB LED config
+#define RGB_DI_PIN GP9
+#define RGBLED_NUM 4
+#define RGBLIGHT_LIMIT_VAL 64
+#define RGBLIGHT_LAYERS
+#define RGBLIGHT_LAYERS_OVERRIDE_RGB_OFF
+// (bug? rgblight_task won't be called, so layers won't work, unless this is set)
+#define RGBLIGHT_USE_TIMER
